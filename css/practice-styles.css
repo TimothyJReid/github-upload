@@ -1,0 +1,45 @@
+body {
+    background: #b4eeca;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+h1 {
+    color: blueviolet;
+    font: 32px Garamond, Helvetica, serif;
+}
+
+table {
+    width: 50%;
+   
+}
+
+thead {
+    text-align: left;
+    color:darkgreen;
+}
+
+td {
+    color: darkorchid;
+}
+
+label {
+    display: block;
+
+}
+
+#submit-btn {
+    display: block;
+    {}
+
+.text-blue {
+    color: rgb(72, 173, 240)
+}
+.text-align {
+    text-align: center;
+}
+.border {
+    border: solid black 10px
+
+}
+
+

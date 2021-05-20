@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Onmouseover & Onmouseout Demo</title>
+    <style>
+        div {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Move your mouse over this text, then move it out
+    </div>
+
+    <script>
+
+        const div = document.getElementsByTagName('div')[0];
+
+        div.addEventListener('mouseover', changeBackground);
+        div.addEventListener('mouseover', changetext);
+        div.addEventListener('mouseout', changeBackgroundout);
+        div.addEventListener('mouseover', textSize);
+        div.addEventListener('mouseout', fontSize);
+        div.addEventListener('mousedown', changeBackground1);
+        div.addEventListener('mouseup', revertBackground);
+
+
+        function changeBackgroundout() {
+            div.style.background = "darkblue";            
+        }
+        function changeBackground(newColor) {
+            div.style.background = 'red';
+        }
+        function changeBackground1() {
+            div.style.background = 'green';
+        }
+        function revertBackground() {
+            div.style.background = 'orange';
+        }
+        function changetext() {
+            div.style.color = "white";            
+        }
+        function textSize() {
+            div.style.fontSize = "80px";            
+        }
+        function fontSize() {
+            div.style.fontSize = "10px";            
+        }
+        
+    </script>
+</body>
+</html>

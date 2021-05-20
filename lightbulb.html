@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Light's on!</title>
+        <style>
+
+            body {
+                margin: auto;
+                width: fit-content;
+            }
+            h2 {
+                background-color: yellow;                
+            }
+            div {
+                text-align: center;
+            }
+
+        </style>
+    </head>
+<body>
+    <div>
+        <h2>Lightbulb</h2>
+
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src='images/off.png'">Turn off the light</button>
+
+        <img id="myImage" src="images/off.png" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='images/on.png'">Turn on the light</button>
+    </div>
+    <div>
+        <div>
+            <button id="genNew">Disco</button>
+  
+      
+        </div>
+    </div>
+    <script>
+       // document.write(5 + 8); // writes to the html document directly for basic testing
+       window.alert('Do not click disco if you have any sensitivity to light/color/flashing!');
+       const setBg = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
+genNew.addEventListener("click", setBg);
+setBg();
+
+    
+    </script>
+</body>
+</html>

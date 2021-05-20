@@ -1,0 +1,29 @@
+
+
+function checkGuess(guess, correct) {
+    let correct = false;
+    if (!COLORS_ARRAY.includes(guess)) {
+        alert('Sorry, that is not a valid color!');
+    } else if (guess > target) {
+        alert('Sorry, your guess is incorrect\n\n' + 'Hint: you color is alphabetically higher than mine.\n\n' + 'please try again');
+    } else if (guess < target) {
+        alert('Sorry, your guess is incorrect\n\n' + 'Hint: you color is alphabetically lower than mine.\n\n' + 'please try again')
+    } else {
+        correct = true;
+    }
+    return correct; 
+}
+//not mine, but works 
+if (!COLORS_ARRAY.includes(guess)) {
+    alert('Sorry, I don\'t recognize your color. ');
+} else if ( guess > target ) {
+    alert(
+     'Hint: your color is alphabetically lower than mine.');
+} else if ( guess < target ) {
+    alert(
+     'Hint: your color is alphabetically higher than mine.');
+} else {
+    correct = true;
+}
+return correct;
+}

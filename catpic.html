@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<body onload="doSomething()">
+    <h1>Testing the new Git feature</h1>
+    <img src="cat.png" alt="A cat" />
+    <script>
+        function doSomething() {
+            const theImg = document.querySelector('img');
+            document.body.appendChild(theImg.cloneNode());
+            document.body.removeChild(document.body.firstElementChild);
+        }
+    </script>
+</body>
+</html>
